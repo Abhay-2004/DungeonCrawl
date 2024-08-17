@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <filter id="torch-glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#1a1a2e"/>
+  
+  <!-- Dungeon walls -->
+  <path d="M0,0 h400 v300 h-400 v-300 M50,50 h300 v200 h-300 v-200" fill="#2a2a3e" />
+  
+  <!-- Room tiles -->
+  <rect x="75" y="75" width="250" height="150" fill="#16213e" stroke="#0f3460" stroke-width="2"/>
+  <line x1="75" y1="125" x2="325" y2="125" stroke="#0f3460" stroke-width="2"/>
+  <line x1="75" y1="175" x2="325" y2="175" stroke="#0f3460" stroke-width="2"/>
+  <line x1="158" y1="75" x2="158" y2="225" stroke="#0f3460" stroke-width="2"/>
+  <line x1="242" y1="75" x2="242" y2="225" stroke="#0f3460" stroke-width="2"/>
+  
+  <!-- Torches -->
+  <circle cx="50" cy="50" r="15" fill="#fca311" filter="url(#torch-glow)" opacity="0.7"/>
+  <circle cx="350" cy="50" r="15" fill="#fca311" filter="url(#torch-glow)" opacity="0.7"/>
+  <circle cx="50" cy="250" r="15" fill="#fca311" filter="url(#torch-glow)" opacity="0.7"/>
+  <circle cx="350" cy="250" r="15" fill="#fca311" filter="url(#torch-glow)" opacity="0.7"/>
+  
+  <!-- Player -->
+  <circle cx="117" cy="200" r="15" fill="#e94560"/>
+  <path d="M110,195 h14 v-20 h-14 z" fill="#e94560"/>
+  <circle cx="117" cy="175" r="10" fill="#533483"/>
+  
+  <!-- Monster -->
+  <path d="M275,100 l20,-20 l20,20 l-10,-30 l20,-10 h-30 l-10,-20 l-10,20 h-30 l20,10 z" fill="#16FF00"/>
+  <circle cx="275" cy="90" r="5" fill="#533483"/>
+  <circle cx="295" cy="90" r="5" fill="#533483"/>
+  
+  <!-- Gold -->
+  <circle cx="200" cy="150" r="10" fill="#FFD700"/>
+  <circle cx="200" cy="150" r="6" fill="#FFA500"/>
+  
+  <!-- Sword -->
+  <path d="M100,210 l25,-25 l-3,-3 l5,-5 l6,6 l-25,25 z" fill="#C0C0C0"/>
+  <line x1="125" y1="185" x2="130" y2="180" stroke="#A9A9A9" stroke-width="2"/>
+  
+  <!-- Health Potion -->
+  <rect x="240" cy="200" width="15" height="25" fill="#FF69B4" rx="2"/>
+  <path d="M240,210 q7.5,-10 15,0" fill="none" stroke="#FF1493" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="200" y="35" font-family="Arial" font-size="24" fill="#e94560" text-anchor="middle" font-weight="bold">Dungeon Crawl</text>
+</svg>
